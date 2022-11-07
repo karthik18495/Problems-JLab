@@ -1,0 +1,66 @@
+{
+    "device" : "cpu",
+
+    "name" : "experiment-unnorm-frac-0.30",
+
+    "plot_title" : "Simple-GAN",
+
+    "seed" : 8,
+
+    "dataset": {
+        "root_file" : "data/eICU_age.npy",
+        "frac": 0.30,
+        "maxlength" : 10000,
+        "label" : 1,
+        "transform": null,
+        "target_transform": null
+    },
+
+    "test_dataset": {
+        "root_file" : "data/eICU_age.npy",
+        "frac": 0.80,
+        "maxlength" : 1000,
+        "label" : 1,
+        "transform": null,
+        "target_transform": null
+    },
+
+    "lr_scheduler": {
+        "step_size": 20,
+        "gamma": 0.1
+    },
+
+    "optimizer": {
+        "lr": 2e-4
+    },
+
+    "training" : {
+      "input_data_len" : 76,
+      "batch_size" : 100,
+      "n_evals" : 1,
+      "latent_dim" : 100,
+      "num_epochs" : 100,
+      "shuffle" : 1
+    },
+
+    "testing" : {
+      "input_data_len" : 76,
+      "batch_size" : 100,
+      "n_evals" : 1,
+      "latent_dim" : 100,
+      "shuffle" : 1
+    },
+
+
+    "output": {
+      "dir": "output/",
+      "chckpt": null,
+      "gen_chckpt_file" : null,
+      "dis_chckpt_file" : null
+    },
+
+    "tensorboard": {
+      "logdir" : "logs"
+    }
+
+}
