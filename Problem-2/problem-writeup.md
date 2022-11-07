@@ -1,6 +1,9 @@
 # Problem 2
 
-The problem deals with 1-D GAN
+The problem that was given is as follows
+
+| The goal of this exercise is to create a generative adversarial network to reproduce the tabular data found https://github.com/JeffersonLab/jlab_datascience_data/blob/main/eICU_age.npy. The dataset includes the ages of critical care patients seen across intensive care units in the United States. The original data is from the eICU Collaborative Research Database https://eicu-crd.mit.edu/about/eicu/.
+To solve this problem implement a generative adversarial network (GAN) in python to produce the distri- bution of age for these patients. Your script must coordinate both the generator and discriminator models. Please provide figures to illustrate this coordination and compare the distribution from the generator model output with that of the true distribution.
 
 ## Data
 
